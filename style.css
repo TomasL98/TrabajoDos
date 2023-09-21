@@ -25,7 +25,7 @@
 
 header {
   width: 100%;
-  /* TODO: Hacer scrolleable */
+  /* TODO scrolleable */
   position: fixed;
   top: 0;
   z-index: 2;
@@ -47,6 +47,10 @@ nav {
   align-items: center;
   background-color: crimson;
   padding: 1rem;
+}
+
+.nav {
+  gap: 50px;
 }
 
 ul a {
@@ -88,6 +92,7 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 
 .hero-info {
@@ -95,19 +100,19 @@ main {
   flex-direction: column;
 
   gap: 20px;
-  width: 50%;
+  width: 100%;
 }
 
 .hero-info h1 {
   font-size: 48px;
-  width: 80%;
+  width: 110%;
   font-weight: 800;
   color: #272d37;
 }
 
 .hero-info p {
   font-size: 14px;
-  width: 70%;
+  width: 140%;
   color: var(--text-gray);
 }
 
@@ -146,6 +151,7 @@ main {
   flex-direction: column;
   justify-content: center;
   gap: 20px;
+  margin-left: 50%;
 }
 
 .hero-img img {
@@ -178,4 +184,157 @@ main {
   width: 70%;
   color: var(--text-gray);
   align-items: center;
+}
+
+/* INFODOS SECTION */
+
+#infodos {
+  padding: 70px 0;
+  max-width: 1200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 80px;
+}
+
+#infodos h2 {
+  font-size: 32px;
+  font-weight: 800;
+  color: #272d37;
+}
+
+.info-cards-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.info-card {
+  width: 300px;
+  height: 290px;
+  padding: 40px 30px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  background-color: var(--secondary);
+  border-radius: 10px;
+  gap: 20px;
+}
+
+.info-card img {
+  width: 50px;
+}
+
+.info-card h3 {
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.info-card p {
+  font-size: 14px;
+  font-weight: 300;
+  color: var(--text-gray);
+}
+
+/* Estilo para el footer */
+footer {
+  position: relative;
+  margin-top: 50px;
+  max-width: 1200px;
+  padding: 50px;
+  background-color: #fff;
+  color: var(--secondary);
+  text-align: center;
+}
+
+footer h2 {
+  font-size: 32px;
+  font-weight: 800;
+  color: #272d37;
+  display: flex;
+  text-align: center;
+  padding: 32px;
+  margin-bottom: 1rem;
+}
+
+/* Estilo para las listas dentro del footer */
+.footer-columns {
+  display: flex;
+  justify-content: start;
+  width: 50%;
+}
+
+.footer-column {
+  flex-basis: calc(50% - 20px);
+  padding: 30px;
+  text-align: center;
+}
+
+/* Estilo para los íconos y los párrafos */
+.special-ul {
+  padding: 0;
+  margin: 0;
+  display: block;
+}
+
+.special-ul li {
+  list-style: none;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.special-ul img {
+  margin-right: 10px;
+  width: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Estilo para el título "Dirección" y "Otras Sucursales" */
+.footer-column h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  display: flex;
+}
+
+.imag-contact {
+  margin-left: 140px;
+  width: 75%;
+  background-color: var(--secondary);
+  padding: 10px;
+  border-radius: 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+
+.imag-contact img {
+  border-radius: 30px;
+}
+
+/* FOOTER LOGOS */
+
+.footer-icons {
+  flex-direction: row;
+  gap: 20px;
+  width: 60px;
+  height: 60px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.footer-icons img {
+  font-size: 16px;
+  margin: 4px;
+  width: 40px;
 }
